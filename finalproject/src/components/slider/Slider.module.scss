@@ -1,0 +1,57 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.slider {
+  @include media('<=screen') {
+    margin-top: 58px;
+  }
+  @include media('<=phone') {
+    margin-top: 45px;
+  }
+}
+
+.arrow {
+  color: $c-Goldenrod;
+  position: absolute;
+  bottom: calc(50% - 45px);
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid $c-Goldenrod;
+  border-radius: 50%;
+  background-color: rgba($c-Antique-White, 0.4);
+  z-index: 20;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+  @include media('<=desktop') {
+    display: none;
+  }
+}
+
+.leftArrow {
+  transform: rotate(180deg);
+  left: 20px;
+  &:hover {
+    transform: scale(1.1, 1.1) rotate(180deg);
+  }
+}
+
+.rightArrow {
+  right: 20px;
+}
+
+.styles.pagination {
+  position: relative;
+  z-index: 400;
+  width: 400px;
+  height: 400px;
+  background-color: $c-Deep-Carrot-Orange;
+}
+
+.pagination {
+}

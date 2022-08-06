@@ -1,0 +1,93 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.sideBarNavigation{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: 50;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background-color: rgba($c-Black-Coral, 0.4);
+  transition: 0.5s all;
+
+}
+
+.wrapper{
+  background-color: $c-Deep-Carrot-Orange;
+  position: relative;
+  top: 58px;
+  padding: 5px;
+  max-width: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  @include media('<=phone') {
+    top: 48px;
+  }
+}
+
+
+.active{
+
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+.logoBlock{
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  height: fit-content;
+  transition: $t-normal;
+  cursor: pointer;
+  &:hover{
+    transform: rotate(180deg);
+  }
+}
+
+.navigation{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.navItem{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $c-Antique-White;
+  font-size: 24px;
+  color: $c-black;
+  cursor: pointer;
+  
+}
+
+.text{
+  display: flex;
+  align-items: center;
+  
+}
+.arrow{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  
+}
+
+.dropDown{
+  display: flex;
+  flex-direction: column;
+  transition: $t-normal;
+}

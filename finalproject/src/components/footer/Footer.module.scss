@@ -1,0 +1,90 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.footer {
+  background-color: #171717;
+  color: $c-Antique-White;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logoBlock {
+  width: fit-content;
+  margin-bottom: 20px;
+  transition: $t-normal;
+  &:hover{
+    transform: scale(1.1 , 1.1);
+  }
+}
+
+.list , .licenseList{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include media('<=tablet') {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.item, .licenseItem {
+  border-left: 1px solid $c-white;
+  opacity: 0.8;
+  transition: $t-normal;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  &:hover {
+    opacity: 1;
+  }
+  &:last-child {
+    border-right: 1px solid $c-white;
+  }
+  margin-bottom: 20px;
+  @include media('<=tablet') {
+    border: none;
+
+    &:last-child {
+      border: none;
+    }
+  }
+  @include media('<=phone') {
+    margin-bottom: 10px;
+    font-size: 14px;
+
+  }
+}
+
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & a {
+    color: $c-Deep-Carrot-Orange;
+  }
+  margin-bottom: 20px;
+  @include media('<=phone') {
+    flex-direction: column;
+
+  }
+}
+
+.license{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  @include media('<=phone') {
+    text-align: center;
+
+  }
+}
+

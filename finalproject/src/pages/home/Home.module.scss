@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.home {
+  background-image: url('https://blz-contentstack-images.akamaized.net/v3/assets/blta8f9a8e092360c6c/blteb3521249ab5f92e/61e765b0819be248ba63157d/2600_Featured_Games.jpg?format=webply&quality=80&auto=webp');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.content{ 
+  padding-top: 60px;
+  padding-bottom: 60px;
+}

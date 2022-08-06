@@ -1,0 +1,36 @@
+// COLORS
+$c-black: #000000;
+$c-white: #fff;
+$c-Deep-Carrot-Orange: #EB6C31;
+$c-Deep-Carrot-Orange-darck: #dd6831;
+$c-Pine-Tree: #332A24;
+$c-Antique-White: #FCE9DB;
+$c-Goldenrod: #D69A20;
+$c-Black-Coral: #585F69;
+$c-Isabelline: #F2F1ED;
+$c-Onyx: #353C42;
+
+
+
+// Font
+$f-Cinzel: 'Cinzel', sans-serif;
+
+
+
+// Font size
+$fs-base: 16;
+$fs-h1: 60;
+$fs-h2: 42;
+$fs-navigation: 30;
+$fs-subtitle: 20;
+$fs-text-input-button: 14px;
+$fs-text: 18;
+
+// Letter spacing
+$ls-base: 2;
+
+// Transition
+$t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Box Shadow
+$bs-normal: 3px 4px 7px rgba($c-black, 0.1);

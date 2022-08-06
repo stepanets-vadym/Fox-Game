@@ -1,0 +1,89 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.gameItem {
+  max-width: 280px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  transition: $t-normal;
+
+  &:hover .logo {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  &:hover .image {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
+
+.image {
+  position: relative;
+  margin-bottom: 15px;
+  transition: $t-normal;
+}
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  transition: $t-normal;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.genre {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.details {
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.gameBuy {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.buybtn {
+  height: 28px;
+  border-radius: 15px;
+  padding: 0 10px;
+  transition: $t-normal;
+  font-size: $fs-base + px;
+  border: none;
+  background-color: $c-Deep-Carrot-Orange-darck;
+  color: $c-white;
+  &:hover {
+    box-shadow: 0px 4px 10px 0px rgba($c-Deep-Carrot-Orange-darck, 0.5);
+  }
+}
+
+.remuvebtn {
+  height: 28px;
+  border-radius: 15px;
+  padding: 0 10px;
+  transition: $t-normal;
+  font-size: $fs-base + px;
+  border: none;
+  background-color: red;
+  color: $c-white;
+  &:hover {
+    box-shadow: 0px 4px 10px 0px rgba(red, 0.5);
+  }
+}

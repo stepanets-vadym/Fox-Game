@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.NavCart {
+  position: relative;
+  margin-right: 15px;
+  border: 2px solid $c-Deep-Carrot-Orange;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  @include media('<=phone') {
+    margin-right: 10px;
+    border: none;
+  }
+}
+
+.cartIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: $c-Deep-Carrot-Orange;
+}
+
+.itemsInCart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 15px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $c-white;
+  z-index: 2;
+  left: 20px;
+  top: -12px;
+  @include media('<=phone') {
+    left: 16px;
+    top: -7px;
+  }
+}

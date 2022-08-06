@@ -1,0 +1,22 @@
+@import '../mixins';
+@import '../variables';
+@import '../media';
+.container {
+  @include maxCentered(1580);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.waves{
+  display: flex;
+}
+
+.upperIndent {
+  margin-top: 70px;
+  @include media('<=screen') {
+    margin-top: 58px;
+  }
+  @include media('<=phone') {
+    margin-top: 45px;
+  }
+}
+

@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+
+.genre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:not(:last-child){
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  
+}
+
+.icon {
+  font-size: $fs-h1 + px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media('<=screen') {
+    font-size: 48px;
+  }
+  @include media('<=phone') {
+    font-size: 36px;
+  }
+}
+
+.text {
+  font-size: $fs-h2 + px;
+  font-weight: 700;
+  color: $c-Black-Coral;
+  @include media('<=screen') {
+    font-size: 36px;
+  }
+  @include media('<=phone') {
+    font-size: 22px;
+  }
+  
+}

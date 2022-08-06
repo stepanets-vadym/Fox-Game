@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+
+.button{
+  background-color: $c-Black-Coral;
+  color: $c-Antique-White;
+  transition: $t-normal;
+  border-radius: 15px;
+  font-size: 18px;
+  padding:0 20px;
+  height: 40px;
+  border: none;
+  opacity: 0.8;
+  
+  &:hover{
+    transform: scale(1.05, 1.05);
+    opacity: 1;
+  }
+  
+  &:not(:last-child){
+    margin-right: 10px;
+  }
+}
+
+
+.sortButton{
+  background-color: $c-Deep-Carrot-Orange;
+}

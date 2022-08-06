@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+
+.cartBlock{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.icon{
+  font-size: $fs-h2 + px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.totalPrice {
+  color: $c-Black-Coral;
+  font-weight: 700;
+}

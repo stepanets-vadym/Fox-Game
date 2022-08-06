@@ -1,0 +1,58 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.loginBlock {
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 24px;
+  color: $c-Black-Coral;
+  border: 1px solid transparent;
+  position: relative;
+  transition-duration: 0.2s;
+  &:hover {
+    color: $c-Deep-Carrot-Orange;
+    transform: scale(1.03);
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 3px;
+      width: 80%;
+      margin: 0 auto;
+      background-color: $c-Deep-Carrot-Orange;
+      transition: $t-normal;
+    }
+  }
+  cursor: pointer;
+  @include media('<=screen') {
+    font-size: 18px;
+  }
+  @include media('<=tablet') {
+    display: none;
+  }
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.logicon {
+  display: none;
+  font-size: 28px;
+  color: $c-Deep-Carrot-Orange;
+  @include media('<=tablet') {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+

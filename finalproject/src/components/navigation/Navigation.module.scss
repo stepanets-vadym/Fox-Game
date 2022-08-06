@@ -1,0 +1,60 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.navigation {
+  display: flex;
+  font-weight: 700;
+  font-size: $fs-navigation + px;
+  
+  @include media("<=desktop") {
+    display: none;
+  }
+  @include media("<=screen") {
+    font-size: 24px;
+
+  }
+}
+
+.navItem {
+  padding: 5px;
+  color: $c-Black-Coral;
+  border: 1px solid transparent;
+  transition-duration: 0.2s;
+  &:hover {
+    color: $c-Deep-Carrot-Orange;
+    transform: scale(1.03);
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 3px;
+      width:80%;
+      margin: 0 auto;
+      background-color: $c-Deep-Carrot-Orange;
+      transition: $t-normal;
+      
+    }
+    
+  }
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 20px;
+    @include media("<=screen") {
+      margin-right: 10px;
+
+    }
+  }
+  
+  
+}
+
+.arrow {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.dropDown{
+  position: relative;
+}

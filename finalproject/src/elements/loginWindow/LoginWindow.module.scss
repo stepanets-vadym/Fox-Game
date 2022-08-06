@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.logWindow {
+  font-size: 24px;
+  padding: 20px;
+  background-color: $c-Deep-Carrot-Orange-darck;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  
+}
+
+.logButton {
+  color: $c-Antique-White;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid $c-Antique-White;
+  font-weight: 700;
+  margin-bottom: 40px;
+  transition: 0.3s;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border: 1px solid $c-Antique-White;
+  top: 86px;
+}
+
+.registration {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $c-Antique-White;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}

@@ -1,0 +1,77 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.AdminPage{
+  background-color: $c-Onyx;
+}
+
+.wrapper{ 
+  padding-top:70px;
+  padding-bottom:70px;
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $fs-h2 + px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: $c-Goldenrod;
+}
+
+
+
+.selectBlock{
+  margin-bottom: 20px;
+  
+}
+
+.select{
+  background-color: $c-Antique-White;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 10px;
+  max-width: 600px;
+ border: none;
+ outline: none;
+}
+
+.selectTitile{
+  margin-bottom: 10px;
+
+  color: $c-Isabelline;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.labelSelect{
+  display: flex;
+  flex-direction: column;
+}
+
+.option{
+  padding: 5px;
+  font-size: 18px;
+  color: $c-Black-Coral;
+}
+
+.formBtn{
+  height: 44px;
+  padding: 0 30px;
+  background-color: $c-Goldenrod;
+  font-size: 24px;
+  border: none;
+  transition: $t-normal;
+  display: block;
+  font-weight: 700;
+  font-family: $f-Cinzel;
+  margin: 0 auto;
+  &:hover{
+    border: 2px dashed $c-black;
+  }
+}

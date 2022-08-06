@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+
+.header{
+  background-color: $c-Isabelline;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.controler{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.userBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

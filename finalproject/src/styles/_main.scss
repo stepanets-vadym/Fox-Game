@@ -1,0 +1,89 @@
+body {
+  color: $c-black;
+  font-family: $f-Cinzel;
+  font-size: $fs-base + px;
+  
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke: currentColor;
+  fill: currentColor;
+  &:not(.has-stroke) {
+    stroke-width: 0;
+  }
+}
+
+// Selection
+*::selection {
+  background-color: rgba($c-Deep-Carrot-Orange-darck, 0.3);
+}
+// Custom Scroll
+*::-webkit-scrollbar {
+  border-radius: 10px;
+  position: relative;
+  z-index: 999;
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba($c-Deep-Carrot-Orange-darck, 0.8);
+  background-color: rgba($c-Deep-Carrot-Orange-darck, 0.3);
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 3px rgba($c-Deep-Carrot-Orange-darck, 0.8);
+  background-color: $c-Deep-Carrot-Orange-darck;
+  border-radius: 10px;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+ul.navigatin__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  margin-bottom: 30px;
+  padding: 10px;
+  height: 55px;
+  width: 100%;
+  
+}
+
+.app{
+  position: relative;
+}
+
+.animate__animated.animate__backInLeft {
+  --animate-duration: 1s;
+}
+
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 0.5s;
+}
+
+
+
+// ! Media example
+// @include media('<=tablet') {
+//   width: 300px;
+// }
+// ! Boostrap
+// @include media-breakpoint-down(sm) {
+//   width: 300px;
+// }

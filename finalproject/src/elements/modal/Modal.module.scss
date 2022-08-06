@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.modal {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: 900;
+  display: flex;
+  height: 100vh;
+  position: fixed;
+  align-items: center;
+  pointer-events: none;
+  transition: $t-normal;
+  justify-content: center;
+  background-color: rgba($c-Onyx, 0.4);
+  
+
+}
+
+.content {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  border: 2px solid $c-black;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: $c-white;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.active{
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+.title{
+  font-size: 30px;
+  padding: 20px 0;
+  border-bottom: 2px solid $c-black;
+  color: $c-American-Yellow;
+  font-weight: 700;
+
+}
+
+.message{
+  padding: 20px 0 ;
+  color: $c-Blue-Violet;
+  font-weight: 500;
+  font-size: $fs-text + px;
+} 

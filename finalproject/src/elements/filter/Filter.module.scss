@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+
+.filter{
+  background-color: $c-Deep-Carrot-Orange;
+  display: flex;
+  padding: 20px;
+  border: 2px solid transparent;
+  transition: $t-normal;
+  &:hover{
+    border: 2px solid $c-black;
+  }
+}
+
+.filterBtn{
+  height: 30px;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 15px;
+  background-color: $c-Black-Coral;
+  color: $c-white;
+  transition: $t-normal;
+  &:not(:last-child){
+    margin-right: 15px;
+  }
+  &:hover{
+    transform: scale(1.1, 1.1)
+  }
+}
